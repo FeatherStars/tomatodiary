@@ -3,6 +3,8 @@ package com.example.t.thisisdiary.Utils;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import com.example.t.thisisdiary.R;
+
 public class UserInformation {
 
     public final static String FILE_NAME = "tomato-diary"; // SharedPreferences文件的名称
@@ -44,7 +46,7 @@ public class UserInformation {
 
     public static String getUserName (Context context) {
         SharedPreferences sp = context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE);
-        return sp.getString(USER_NAME, "点此编辑用户名");
+        return sp.getString(USER_NAME, context.getResources().getString(R.string.click_edit_username));
     }
 
     public static void setUserPassword (Context context, String userPassword) {
@@ -64,7 +66,7 @@ public class UserInformation {
 
     public static String getUserSignature (Context context) {
         SharedPreferences sp = context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE);
-        return sp.getString(USER_SIGNATURE, "编辑我的个性签名");
+        return sp.getString(USER_SIGNATURE, context.getResources().getString(R.string.edit_signature));
     }
 
     public static void setUserMail (Context context, String userMail) {

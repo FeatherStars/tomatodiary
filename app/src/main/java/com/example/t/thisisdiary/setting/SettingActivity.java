@@ -86,11 +86,11 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
                 break;
             case R.id.ll_tomatotime:
                 builder = new AlertDialog.Builder(this);
-                builder.setTitle("设置番茄时间");
+                builder.setTitle(R.string.set_tomatotime);
                 View view_tomatotime_set = getLayoutInflater().inflate(R.layout.alert_dialog_tomatotime_set, null);
                 final EditText et_tomatotime_set = (EditText) view_tomatotime_set.findViewById(R.id.et_tomatotime_set);
                 builder.setView(view_tomatotime_set);
-                builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                builder.setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         String time = et_tomatotime_set.getText().toString().trim();
@@ -98,11 +98,11 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
                             tv_tomatotime_set.setText(time + "min");
                             UserInformation.setTomatoTime(SettingActivity.this, time);
                         } else {
-                            Toast.makeText(SettingActivity.this, "番茄时间应为正整数", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SettingActivity.this, R.string.tomatotime_should_positiveinteger, Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
-                builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                     }

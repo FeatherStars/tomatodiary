@@ -88,8 +88,8 @@ public class CountdownActivity extends BaseActivity {
 
     private void completeTomato() {
         AlertDialog.Builder builder = new AlertDialog.Builder(CountdownActivity.this);
-        builder.setTitle("恭喜完成一个番茄！");
-        builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+        builder.setTitle(R.string.congratulation_for_a_tomato);
+        builder.setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 Intent intent = getIntent();
@@ -113,14 +113,14 @@ public class CountdownActivity extends BaseActivity {
     public void onBackPressed() {
         //super.onBackPressed();
         AlertDialog.Builder builder = new AlertDialog.Builder(CountdownActivity.this);
-        builder.setTitle("番茄尚未完成，直接返回此番茄将被舍弃，确认返回？");
-        builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+        builder.setTitle(R.string.tomato_unfinished_return_abandoned);
+        builder.setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 finish();
             }
         });
-        builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
 

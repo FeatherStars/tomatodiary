@@ -114,18 +114,18 @@ public class TomatoClockActivity extends BaseActivity implements AdapterView.OnI
                 break;
             case R.id.toolbar_tomato_add:
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setTitle("添加一个任务");
+                builder.setTitle(R.string.add_a_task);
                 View view_tomato_add = getLayoutInflater().inflate(R.layout.alert_dialog_tomato_add, null);
                 final EditText et_task_name = (EditText) view_tomato_add.findViewById(R.id.et_task_name);
                 final EditText et_tomato_number = (EditText) view_tomato_add.findViewById(R.id.et_tomato_number);
                 builder.setView(view_tomato_add);
-                builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                builder.setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         if (TextUtils.isEmpty(et_task_name.getText())) {
-                            Toast.makeText(TomatoClockActivity.this, "任务内容不得为空", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(TomatoClockActivity.this, R.string.task_content_can_not_empty, Toast.LENGTH_SHORT).show();
                         } else if (TextUtils.isEmpty(et_tomato_number.getText()) || !OtherUtils.isInteger(et_tomato_number.getText().toString())){
-                            Toast.makeText(TomatoClockActivity.this, "番茄个数必须是整数", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(TomatoClockActivity.this, R.string.tomatonumbers_should_positiveinteger, Toast.LENGTH_SHORT).show();
                         } else {
                             String taskName = et_task_name.getText().toString();
                             int tomatoNumber = Integer.parseInt(et_tomato_number.getText().toString());
@@ -142,7 +142,7 @@ public class TomatoClockActivity extends BaseActivity implements AdapterView.OnI
                         }
                     }
                 });
-                builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                     }

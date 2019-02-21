@@ -129,7 +129,7 @@ public class RecycleBinActivity extends BaseActivity implements
 
     @Override
     public void onClick(View parent, int position) {
-        Toast.makeText(RecycleBinActivity.this, "请还原后查看", Toast.LENGTH_SHORT).show();
+        Toast.makeText(RecycleBinActivity.this, R.string.view_after_restore, Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -207,7 +207,7 @@ public class RecycleBinActivity extends BaseActivity implements
                     SQLiteUtil.deleteDiary(time);
                     adapter.remove(position);
                     adapter.notifyDataSetChanged();
-                    Toast.makeText(RecycleBinActivity.this, "已删除", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RecycleBinActivity.this, R.string.has_deleted, Toast.LENGTH_SHORT).show();
                     dismiss();
                     yesOrNo();
 
@@ -221,7 +221,7 @@ public class RecycleBinActivity extends BaseActivity implements
                     SQLiteUtil.updateIsRecycleBin(0, time);
                     adapter.remove(position);
                     adapter.notifyDataSetChanged();
-                    Toast.makeText(context, "已还原", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, R.string.has_restored, Toast.LENGTH_SHORT).show();
                     dismiss();
                     yesOrNo();
                 }

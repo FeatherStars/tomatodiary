@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">番茄日记</string>
+
+    <string name="login_username">用户名/手机/邮箱</string>
+
+    <string name="copy_success">复制成功</string>
+
+    <string name="has_deleted">已删除</string>
+    <string name="has_placed_top">已置顶</string>
+    <string name="has_setted_secret">已设为私密</string>
+
+    <string name="view_after_restore">请还原后查看</string>
+    <string name="has_restored">已还原</string>
+
+    <string name="has_relieve_secret">已解除私密</string>
+
+    <string name="modify_username">修改用户名</string>
+    <string name="username_can_not_empty">用户名不能为空</string>
+    <string name="modify_signature">修改签名</string>
+    <string name="signature_can_not_empty">个性签名不能为空</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    
+    <string name="set_tomatotime">设置番茄时间</string>
+    <string name="tomatotime_should_positiveinteger">番茄时间应为正整数</string>
+
+    <string name="congratulation_for_a_tomato">恭喜完成一个番茄！</string>
+    <string name="tomato_unfinished_return_abandoned">番茄尚未完成，直接返回此番茄将被舍弃，确认返回？</string>
+
+    <string name="add_a_task">添加一个任务</string>
+    <string name="task_content_can_not_empty">任务内容不得为空</string>
+    <string name="tomatonumbers_should_positiveinteger">番茄个数必须是整数</string>
+
+    <string name="click_edit_username">点此编辑用户名</string>
+    <string name="edit_signature">编辑我的个性签名</string>
+
+    <string name="save_success">保存成功</string>
+    <string name="input_null">您没有输入任何内容</string>
+
+</resources>

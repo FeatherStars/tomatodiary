@@ -203,7 +203,7 @@ public class SecretActivity extends BaseActivity implements
                     SQLiteUtil.updateIsSecret(0,time);
                     adapter.remove(position);
                     adapter.notifyDataSetChanged();
-                    Toast.makeText(SecretActivity.this, "已删除", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SecretActivity.this, R.string.has_deleted, Toast.LENGTH_SHORT).show();
                     dismiss();
                     yesOrNo();
                 }
@@ -217,7 +217,7 @@ public class SecretActivity extends BaseActivity implements
                     SQLiteUtil.updateIsSecret(0, time);
                     adapter.remove(position);
                     adapter.notifyDataSetChanged();
-                    Toast.makeText(SecretActivity.this, "已解除私密", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SecretActivity.this, R.string.has_relieve_secret, Toast.LENGTH_SHORT).show();
                     dismiss();
                     yesOrNo();
                 }

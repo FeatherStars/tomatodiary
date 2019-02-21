@@ -111,7 +111,7 @@ public class WriteDiary extends BaseActivity {
             diary.setIsRecycleBin(0);
             diary.setIsSecret(0);
             SQLiteUtil.saveDiary(title, content, time, isRecycleBin, isSecret);
-            Toast.makeText(WriteDiary.this, "保存成功", Toast.LENGTH_SHORT).show();
+            Toast.makeText(WriteDiary.this, R.string.save_success, Toast.LENGTH_SHORT).show();
             // 把diary传回
             Intent intent = new Intent();
             intent.putExtra("writediary_newdiary", diary);
@@ -125,7 +125,7 @@ public class WriteDiary extends BaseActivity {
             }
             finish();
         } else {
-            Toast.makeText(WriteDiary.this, "您没有输入任何内容", Toast.LENGTH_SHORT).show();
+            Toast.makeText(WriteDiary.this, R.string.input_null, Toast.LENGTH_SHORT).show();
         }
     }
 }

@@ -97,23 +97,23 @@ public class PersonInformationActivity extends BaseActivity implements View.OnCl
                 break;
             case R.id.ll_username:
                 builder = new AlertDialog.Builder(this);
-                builder.setTitle("修改用户名");
+                builder.setTitle(R.string.modify_username);
                 View view_username = getLayoutInflater().inflate(R.layout.alert_dialog_username, null);
                 final EditText et_username = (EditText) view_username.findViewById(R.id.et_username);
                 builder.setView(view_username);
-                builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                builder.setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         String userName = et_username.getText().toString().trim();
                         if (TextUtils.isEmpty(userName)) { // TODO：这里用et_username.getText().equals("")不可以，为什么？？？
-                            Toast.makeText(PersonInformationActivity.this, "用户名不能为空", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(PersonInformationActivity.this, R.string.username_can_not_empty, Toast.LENGTH_SHORT).show();
                         } else {
                             tv_username_edit.setText(userName);
                             UserInformation.setUserName(PersonInformationActivity.this, userName);
                         }
                     }
                 });
-                builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                     }
@@ -122,23 +122,23 @@ public class PersonInformationActivity extends BaseActivity implements View.OnCl
                 break;
             case R.id.ll_user_signature:
                 builder = new AlertDialog.Builder(this);
-                builder.setTitle("修改签名");
+                builder.setTitle(R.string.modify_signature);
                 View view_user_signature = getLayoutInflater().inflate(R.layout.alert_dialog_user_signature, null);
                 final EditText et_user_signature = (EditText) view_user_signature.findViewById(R.id.et_user_signature);
                 builder.setView(view_user_signature);
-                builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                builder.setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         String userSignature = et_user_signature.getText().toString().trim();
                         if (TextUtils.isEmpty(userSignature)) {
-                            Toast.makeText(PersonInformationActivity.this, "个性签名不能为空", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(PersonInformationActivity.this, R.string.signature_can_not_empty, Toast.LENGTH_SHORT).show();
                         } else {
                             tv_user_signature_edit.setText(userSignature);
                             UserInformation.setUserSignature(PersonInformationActivity.this, userSignature);
                         }
                     }
                 });
-                builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                     }

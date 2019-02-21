@@ -392,7 +392,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,
                     // 删除日记
                     diaryListAdapter.remove(position);
                     diaryListAdapter.notifyDataSetChanged();
-                    Toast.makeText(MainActivity.this, "已删除", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, R.string.has_deleted, Toast.LENGTH_SHORT).show();
                     dismiss();
                     fab_new_diary.show();
                 }
@@ -401,7 +401,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,
             popupWindowView.findViewById(R.id.ll_top).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Toast.makeText(context, "置顶", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, R.string.has_placed_top, Toast.LENGTH_SHORT).show();
                     dismiss();
                     fab_new_diary.show();
                 }
@@ -416,7 +416,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,
                     // 在首页移除日记
                     diaryListAdapter.remove(position);
                     diaryListAdapter.notifyDataSetChanged();
-                    Toast.makeText(context, "已设为私密", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, R.string.has_setted_secret, Toast.LENGTH_SHORT).show();
                     dismiss();
                     fab_new_diary.show();
                 }

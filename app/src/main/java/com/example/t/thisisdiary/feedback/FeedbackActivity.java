@@ -51,7 +51,7 @@ public class FeedbackActivity extends BaseActivity implements
         switch (view.getId()) {
             case R.id.tv_qq:
                 onClickCopy();
-                Toast.makeText(FeedbackActivity.this, "复制成功", Toast.LENGTH_SHORT).show();
+                Toast.makeText(FeedbackActivity.this, R.string.copy_success, Toast.LENGTH_SHORT).show();
                 break;
             default:
                 break;
