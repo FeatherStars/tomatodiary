@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- hdpi 1.5 四舍五入-->
+    <!--px  dp-->
+    <dimen name="dimen_dp_3">2dp</dimen>
+    <dimen name="dimen_dp_10">7dp</dimen>
+
+    <!--px  sp-->
+    <dimen name="dimen_sp_14">9sp</dimen>
+
+
+</resources>

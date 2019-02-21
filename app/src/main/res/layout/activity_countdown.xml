@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_countdown"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+
+    <!--番茄时间-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <!--秒-->
+        <TextView
+            android:id="@+id/tv_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="60sp"
+            android:text="00"/>
+        <!--分和秒间的冒号-->
+        <TextView
+            android:id="@+id/tv_colon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_minute"
+            android:textColor="@color/colorPrimary"
+            android:textSize="60sp"
+            android:text=" : "/>
+
+        <!--分-->
+        <TextView
+            android:id="@+id/tv_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_colon"
+            android:textColor="@color/colorPrimary"
+            android:textSize="60sp"
+            android:text="00"/>
+
+        <!--秒和毫秒间的冒号-->
+        <TextView
+            android:id="@+id/tv_colon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_minute"
+            android:textColor="@color/colorPrimary"
+            android:textSize="60sp"
+            android:text=" : "/>
+        <!--毫秒-->
+        <TextView
+            android:id="@+id/tv_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/tv_colon2"
+            android:text="00"
+            android:textColor="@color/colorPrimary"
+            android:textSize="60sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

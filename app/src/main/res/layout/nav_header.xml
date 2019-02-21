@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:padding="10dp"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/nav_header_head_protrait"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/nav_header_signature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="这里是个性签名"
+        android:textColor="@color/color_white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/nav_header_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/nav_header_signature"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="用户名"
+        android:textColor="@color/color_white"
+        android:textSize="18sp"/>
+
+
+</RelativeLayout>

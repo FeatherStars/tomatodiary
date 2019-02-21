@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.t.thisisdiary">
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--启动页面-->
+        <activity
+            android:name=".login.AppStartActivity"
+            android:theme="@style/SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--登录页面-->
+        <activity
+            android:name=".login.LoginActivity"
+            android:theme="@style/SplashActivity">
+        </activity>
+
+        <!--Main-->
+        <activity
+            android:name=".main.MainActivity"
+            android:theme="@style/ActivityThemeOfTransparentStatusBar"
+            android:label="日记列表">
+        </activity>
+
+        <!--查看日记-->
+        <activity
+            android:name=".viewdiary.ViewDiaryActivity"
+            android:label="查看日记">
+        </activity>
+
+        <!--编辑日记-->
+        <activity
+            android:name=".writediary.WriteDiary"
+            android:label="记日记">
+        </activity>
+
+        <!--番茄时钟-->
+        <activity
+            android:name=".tomatoclock.TomatoClockActivity"
+            android:label="番茄时钟">
+        </activity>
+
+        <!--倒计时-->
+        <activity
+            android:name=".tomatoclock.CountdownActivity"
+            android:label="倒计时">
+        </activity>
+
+        <!--回收站-->
+        <activity
+            android:name=".recyclebin.RecycleBinActivity"
+            android:label="回收站">
+        </activity>
+
+        <!--私密日记-->
+        <activity
+            android:name=".secret.SecretActivity"
+            android:label="私密日记">
+        </activity>
+        <!--反馈-->
+        <activity
+            android:name=".feedback.FeedbackActivity"
+            android:label="反馈">
+        </activity>
+        <!--设置-->
+        <activity
+            android:name=".setting.SettingActivity"
+            android:label="设置">
+        </activity>
+        <!--账号信息-->
+        <activity
+            android:name=".setting.PersonInformationActivity"
+            android:label="账号信息">
+        </activity>
+
+    </application>
+
+</manifest>

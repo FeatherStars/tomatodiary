@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--group标签，表示一个组-->
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_menu_calendar"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="日历"/>
+        <item
+            android:id="@+id/nav_menu_tomato_clock"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="番茄时钟" />
+        <item
+            android:id="@+id/nav_menu_night_mode"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="夜间模式" />
+        <item
+            android:id="@+id/nav_menu_secret"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="私密日记" />
+        <item
+            android:id="@+id/nav_menu_recycle_bin"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="回收站" />
+        <item
+            android:id="@+id/nav_menu_setting"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="设置" />
+        <item
+            android:id="@+id/nav_menu_feedback"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="反馈" />
+    </group>
+
+</menu>

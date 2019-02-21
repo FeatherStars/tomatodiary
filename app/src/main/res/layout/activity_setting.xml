@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_background_common">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_setting"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <!--账号信息-->
+    <LinearLayout
+        android:id="@+id/ll_personinformation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/textview_background_selector">
+        <TextView
+            android:id="@+id/tv_personinformation"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:text="账号信息"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_separator"/>
+
+    <!--密码设置-->
+    <LinearLayout
+        android:id="@+id/ll_passwordsetting"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/textview_background_selector">
+        <TextView
+            android:id="@+id/tv_passwordsetting"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:text="密码设置"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_separator"/>
+
+    <!--提醒设置-->
+    <LinearLayout
+        android:id="@+id/ll_alertsetting"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/textview_background_selector">
+        <TextView
+            android:id="@+id/tv_alertsetting"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:text="提醒设置"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_separator"/>
+
+    <!--番茄时间-->
+    <LinearLayout
+        android:id="@+id/ll_tomatotime"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/textview_background_selector">
+        <TextView
+            android:id="@+id/tv_tomatotime"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:text="番茄时间"/>
+        <TextView
+            android:id="@+id/tv_tomatotime_set"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical|right"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:text="25min"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_separator"/>
+
+
+    <Button
+        android:id="@+id/tv_logout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textColor="@color/color_btn_logout"
+        android:textSize="18sp"
+        android:text="退出登录"/>
+
+
+
+</LinearLayout>

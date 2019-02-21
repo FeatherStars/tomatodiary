@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#292421</color>
+    <color name="colorPrimaryDark">#292421</color>
+    <color name="colorAccent">#292421</color>
+
+    <color name="color_background_common">#8B8989</color>
+    <color name="color_tip_text">#C0C0C0</color>
+
+    <color name="color_diary_item_card">#808069</color>
+
+    <color name="color_white">#FFFFFF</color>
+
+    <color name="color_btn_text">#C0C0C0</color>
+
+    <color name="color_btn_logout">#FF0000</color>
+
+    <color name="color_separator">#C0C0C0</color>
+
+</resources>
