@@ -54,7 +54,7 @@ public class WriteDiary extends BaseActivity {
             //actionBar.setHomeAsUpIndicator(R.drawable.ic_launcher_foreground); // 设置导航按钮图标
         }
 
-        editeddiary = (Diary) getIntent().getSerializableExtra("viewdiaryactivity_diary");
+        editeddiary = (Diary) getIntent().getSerializableExtra("diary-1");
 
         et_diary_title = (EditText) findViewById(R.id.et_diary_title);
         et_diary_content = (EditText) findViewById(R.id.et_diary_content);
@@ -92,7 +92,7 @@ public class WriteDiary extends BaseActivity {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
+        //super.onBackPressed();
         saveDiary();
     }
 
@@ -120,7 +120,7 @@ public class WriteDiary extends BaseActivity {
             if(editeddiary != null) {
                 SQLiteUtil.deleteDiary(editeddiary.getTime());
                 Intent intent1 = new Intent();
-                intent1.putExtra("writediary_editdiary", diary);
+                intent1.putExtra("diary-2", diary);
                 setResult(RESULT_OK, intent1);
             }
             finish();

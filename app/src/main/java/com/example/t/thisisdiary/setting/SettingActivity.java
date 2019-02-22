@@ -94,7 +94,7 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         String time = et_tomatotime_set.getText().toString().trim();
-                        if (OtherUtils.isPositiveInteger(time)) {
+                        if (!time.equals("") && OtherUtils.isPositiveInteger(time)) {
                             tv_tomatotime_set.setText(time + "min");
                             UserInformation.setTomatoTime(SettingActivity.this, time);
                         } else {

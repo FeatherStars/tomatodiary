@@ -78,7 +78,7 @@ public class ViewDiaryActivity extends BaseActivity{
                 break;
             case R.id.toolbar_editdiary:
                 Intent intent = new Intent(ViewDiaryActivity.this, WriteDiary.class);
-                intent.putExtra("viewdiaryactivity_diary", diary);
+                intent.putExtra("diary-1", diary);
                 startActivityForResult(intent, 1);
             default:
                 break;
@@ -90,8 +90,8 @@ public class ViewDiaryActivity extends BaseActivity{
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         switch(requestCode) {
             case 1:
-                if(resultCode == RESULT_OK) {
-                    diary = (Diary) data.getSerializableExtra("writediary_editdiary");
+                if(resultCode == RESULT_OK) { // RESULT_CANCELED = 0，RESULT_OK = -1
+                    diary = (Diary) data.getSerializableExtra("diary-2");
                     tv_diary_title.setText(diary.getTitle());
                     tv_diary_content.setText(diary.getContent());
 
