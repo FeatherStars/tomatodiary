@@ -1,15 +1,10 @@
 package com.example.t.thisisdiary.Utils;
 
 import android.content.ContentValues;
-import android.content.Context;
 import android.database.Cursor;
-import android.widget.Toast;
 
 import com.example.t.thisisdiary.bean.Diary;
 import com.example.t.thisisdiary.bean.Tomato;
-import com.example.t.thisisdiary.writediary.WriteDiary;
-
-import org.litepal.crud.DataSupport;
 
 import java.util.ArrayList;
 import java.util.List;

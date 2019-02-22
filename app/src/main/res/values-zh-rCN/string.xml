@@ -37,6 +37,6 @@
     <string name="edit_signature">编辑我的个性签名</string>
 
     <string name="save_success">保存成功</string>
-    <string name="input_null">您没有输入任何内容</string>
+    <string name="input_null">您没有输入任何内容，点击“确定”将直接返回。</string>
 
 </resources>

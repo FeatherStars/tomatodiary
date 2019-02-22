@@ -1,12 +1,11 @@
 package com.example.t.thisisdiary.writediary;
 
-import android.content.ContentValues;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.view.GravityCompat;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.Menu;
@@ -20,9 +19,6 @@ import com.example.t.thisisdiary.Utils.SQLiteUtil;
 import com.example.t.thisisdiary.Utils.TimeUtil;
 import com.example.t.thisisdiary.base.BaseActivity;
 import com.example.t.thisisdiary.bean.Diary;
-import com.example.t.thisisdiary.main.MainActivity;
-
-import static com.example.t.thisisdiary.login.AppStartActivity.db;
 
 public class WriteDiary extends BaseActivity {
 
@@ -125,7 +121,22 @@ public class WriteDiary extends BaseActivity {
             }
             finish();
         } else {
-            Toast.makeText(WriteDiary.this, R.string.input_null, Toast.LENGTH_SHORT).show();
+            //Toast.makeText(WriteDiary.this, R.string.input_null, Toast.LENGTH_SHORT).show();
+            AlertDialog.Builder builder = new AlertDialog.Builder(WriteDiary.this);
+            builder.setTitle(R.string.input_null);
+            builder.setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    finish();
+                }
+            });
+            builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+
+                }
+            });
+            builder.show();
         }
     }
 }

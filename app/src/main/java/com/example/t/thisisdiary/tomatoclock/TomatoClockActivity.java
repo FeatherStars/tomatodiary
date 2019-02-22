@@ -3,8 +3,6 @@ package com.example.t.thisisdiary.tomatoclock;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
@@ -16,19 +14,14 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.t.thisisdiary.R;
-import com.example.t.thisisdiary.Utils.MyDatabaseHelper;
 import com.example.t.thisisdiary.Utils.OtherUtils;
 import com.example.t.thisisdiary.Utils.SQLiteUtil;
 import com.example.t.thisisdiary.Utils.TimeUtil;
-import com.example.t.thisisdiary.Utils.UserInformation;
 import com.example.t.thisisdiary.base.BaseActivity;
 import com.example.t.thisisdiary.bean.Tomato;
-import com.example.t.thisisdiary.main.DiaryListAdapter;
-import com.example.t.thisisdiary.setting.PersonInformationActivity;
 
 import java.util.ArrayList;
 import java.util.List;

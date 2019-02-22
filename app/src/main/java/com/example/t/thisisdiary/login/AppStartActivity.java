@@ -4,15 +4,11 @@ import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.example.t.thisisdiary.R;
 import com.example.t.thisisdiary.Utils.MyDatabaseHelper;
 import com.example.t.thisisdiary.base.BaseActivity;
-import com.example.t.thisisdiary.main.MainActivity;
-
-import org.litepal.tablemanager.Connector;
 
 public class AppStartActivity extends BaseActivity {
 
